@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FBDDDA;">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ebola</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27.4948349,66.2089188 C28.7483692,83.4218209 33.0875105,95.8299323 35.3852827,112.934773 C37.4790856,128.521247 60.6992869,141.305395 78.7399524,131.181113 C127.017295,104.088244 140.622289,80.8507961 173.644894,94.4248047 C175.460486,95.1711076 175.295278,105.941664 173.644894,107.038896 C156.553697,118.401703 146.747033,57.7553325 128.696444,84.9974145 C121.075571,96.498892 147.300356,107.038896 147.300356,112.934773 C147.300356,118.830651 145.012881,124.086163 143.47474,124.85046 C131.907132,130.598368 128.696444,118.652431 131.051584,107.038896" id="path-1"></path>
+        <filter x="-21.4%" y="-43.0%" width="142.7%" height="191.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="8.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="8.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.217890143   0 0 0 0 0.0358911417   0 0 0 0 0.00977101363  0 0 0 0.743489583 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="ebola" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g>
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#EA6A57" stroke-width="7" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "ebola",
+    "image": "ebola.svg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "boogers",
+    "image": "boogers.svg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "clap",
+    "image": "gonorrhea.svg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "roaches",
+    "image": "roaches.svg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "spider",
+    "image": "spider.svg",
+    "clicked": false
+  }
+]
