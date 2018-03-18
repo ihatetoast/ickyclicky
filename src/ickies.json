@@ -28,5 +28,11 @@
     "name": "spider",
     "image": "spider.svg",
     "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "turd",
+    "image": "turd.svg",
+    "clicked": false
   }
 ]
