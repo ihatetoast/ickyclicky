@@ -4,7 +4,7 @@ import React from "react";
 const IckyCard = props => (
   <div className="card" >
     <div className="img-frame" >
-      <img alt={props.name} src={props.image} />
+      <img alt={props.name} src={props.image}/>
     </div>
   </div>
 );
@@ -15,3 +15,5 @@ export default IckyCard;
 //inner div is only for image holding to give a little stoil and to pass props to image.
 
 //fcn onClick={() => props.rememberIcky(props.id)}
+
+//src={'./public/images/'+ props.name +'.svg'}

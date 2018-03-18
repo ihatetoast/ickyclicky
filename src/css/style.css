@@ -1,0 +1,8 @@
+/* change gameboard to css grid */
+.gameboard {
+  background-color: #010101;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 20px;
+}
+

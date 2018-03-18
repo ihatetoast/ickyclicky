@@ -21,7 +21,7 @@
             <stop stop-color="#DFB0B0" stop-opacity="0.5" offset="0%"></stop>
             <stop stop-color="#822222" stop-opacity="0.5" offset="100%"></stop>
         </radialGradient>
-        <path d="M88.375,109.762103 C82.4482422,109.762103 68.5527344,115.182025 62.9648437,118.654681 C57.3769531,122.127338 2.3638405,181.805042 5.93164063,186.9164 C9.49944075,192.027758 74.1347656,143.260078 79.578125,142.455463 C85.0214844,141.650847 112.638672,141.220944 119.955078,143.260078 C127.271484,145.299213 188.130859,192.994525 190.658203,189.168353 C193.185547,185.342181 143.158132,129.338535 130.726562,118.654681 C121.350466,110.596741 114.202871,109.762103 112.011719,109.762103 C104.367188,109.762103 94.3017578,109.762103 88.375,109.762103 Z" id="path-6"></path>
+        <path d="M88.375,189.386719 C82.4482422,189.386719 68.5527344,183.966797 62.9648437,180.494141 C57.3769531,177.021484 2.3638405,117.34378 5.93164062,112.232422 C9.49944075,107.121064 74.1347656,155.888744 79.578125,156.693359 C85.0214844,157.497975 112.638672,157.927878 119.955078,155.888744 C127.271484,153.849609 188.130859,106.154297 190.658203,109.980469 C193.185547,113.806641 143.158132,169.810287 130.726562,180.494141 C121.350466,188.552081 114.202871,189.386719 112.011719,189.386719 L88.375,189.386719 Z" id="path-6"></path>
         <filter x="-2.2%" y="-5.0%" width="104.3%" height="110.0%" filterUnits="objectBoundingBox" id="filter-7">
             <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
             <feGaussianBlur stdDeviation="2.5" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
@@ -54,7 +54,7 @@
             <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
             <use stroke="#DCB6B0" stroke-width="1" xlink:href="#path-3"></use>
         </g>
-        <g id="upperlip-copy" stroke-linecap="round" transform="translate(98.258068, 149.574411) scale(1, -1) translate(-98.258068, -149.574411) ">
+        <g id="lowerlip" stroke-linecap="round">
             <use fill="#F6CBC4" fill-rule="evenodd" xlink:href="#path-6"></use>
             <use fill="url(#radialGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
             <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>

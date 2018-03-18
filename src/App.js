@@ -1,20 +1,36 @@
 import React, { Component } from 'react';
-import './App.css';
 import ickies from './ickies.json';
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import Instructions from "./components/Instructions";
+import IckyCard from './components/IckyCard';
+
 
 class App extends Component {
+
+  //set state here for the cards to keep track of clicked on (t/f)
+  state = {
+    ickies
+  }
   //map over json of ickies
   render() {
     return (
       <Wrapper>
         <Title>Icky Clicky</Title>
-      </Wrapper>
-      <div className="App">
-        <div class="instructions">
-          <p>Click on an icky and score points, but don't click on any icky than once or you'll get sicky!</p>
+        <Instructions />
+        <div className="gameboard">
+          {this.state.ickies.map(icky => (
+            <IckyCard
+              rememberIcky={this.rememberIcky}
+              id={icky.id}
+              key={icky.id}
+              name={icky.name}
+              image={icky.image}
+            />
+          ))}
         </div>
-      </div>
-    );
+      </Wrapper>   
+    )
   }
 }
 
