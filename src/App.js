@@ -41,7 +41,9 @@ class App extends Component {
         <div className="gameboard">
           {this.shuffle(this.state.ickies).map(icky => (
             <IckyCard
-              rememberIcky={this.rememberIcky}
+      {/*
+      pass onclick mthd as a prop at this level
+      */}
               id={icky.id}
               key={icky.id}
               name={icky.name}
