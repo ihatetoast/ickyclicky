@@ -6,6 +6,7 @@ import CardGrid from "./CardGrid";
 
 class GameBoard extends Component {
   state = {
+    picked: [],
     score: 0,
     topscore: 0
   };

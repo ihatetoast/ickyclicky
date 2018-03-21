@@ -2,7 +2,7 @@ import React from "react";
 
 //the indiv card created here. content = props
 const IckyCard = props => (
-  <div className="card" onClick={props.METHODFROMPARENT}>
+  <div className="card" onClick={props.validatePick}>
     <div className="img-frame">
       <img alt={props.name} src={props.image} />
     </div>

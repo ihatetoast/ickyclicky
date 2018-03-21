@@ -7,8 +7,7 @@ import IckyCard from "./IckyCard";
 class CardList extends Component {
   //don't forget the constructor props and super to bind this.
   state = {
-    ickies,
-    picked: []
+    ickies
   };
   // validatePick(id) {
   //   // this is the code to handle the picking.
@@ -24,6 +23,10 @@ class CardList extends Component {
   // resetGame() {
   //   this.state.set();
   // }
+  validatePick = () => {
+    console.log(`Icky picked`);
+    //shuffle again. deal with this weds
+  };
   shuffle = cards => {
     let shuffledCards = [];
     //store arg
@@ -42,6 +45,7 @@ class CardList extends Component {
       <div className="gameboard">
         {this.shuffle(this.state.ickies).map(icky => (
           <IckyCard
+            validatePick={this.validatePick}
             id={icky.id}
             key={icky.id}
             name={icky.name}
