@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
 
-import Header from "./components/Header";
-import Instructions from "./components/Instructions";
-import GameBoard from "./components/GameBoard";
+import Header from "./components/lean/Header";
+import Instructions from "./components/lean/Instructions";
+import GameBoard from "./components/logical/GameBoard";
 
 class App extends Component {
   render() {

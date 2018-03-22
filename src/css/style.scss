@@ -1,0 +1,22 @@
+/* change gameboard to css grid */
+
+/* Sass vars for greenie colours: 
+ icky colous */
+$robinsEgg: #99ddc8;
+$pistachio: #95bf74;
+$lightGreen: #659b5e;
+$mediumGreen: #556f44;
+$darkestGreen: #283f3b;
+
+/* HEADER */
+.header {
+  background-color: $mediumGreen;
+  color: $robinsEgg;
+}
+/* INSTRUCTIONS */
+.gameboard {
+  background-color: $darkestGreen;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 20px;
+}

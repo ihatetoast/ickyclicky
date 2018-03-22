@@ -1,8 +1,16 @@
 /* change gameboard to css grid */
+/* Sass vars for greenie colours: 
+ icky colous */
+/* HEADER */
+.header {
+  background-color: #556f44;
+  color: #99ddc8; }
+
+/* INSTRUCTIONS */
 .gameboard {
-  background-color: #010101;
+  background-color: #283f3b;
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-gap: 20px;
-}
+  grid-gap: 20px; }
 
+/*# sourceMappingURL=style.css.map */

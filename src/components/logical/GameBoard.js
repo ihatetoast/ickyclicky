@@ -4,13 +4,22 @@ import React, { Component, Fragment } from "react";
 import Scores from "./Scores";
 import CardGrid from "./CardGrid";
 
-class GameBoard extends Component {
-  state = {
-    picked: [],
-    score: 0,
-    topscore: 0
-  };
+//import my json
+import ickies from "../../ickies.json";
 
+class GameBoard extends Component {
+  // increment counter, resent cohnter
+  constructor(props) {
+    super(props);
+    // this.something=this.something.bind(this);
+    // this.incrementCounter = this.incrementCounter.bind(this);
+    // this.resetCounter = this.resetCounter.bind(this);
+    this.state = {
+      picked: [], //not here
+      score: 0,
+      topscore: 0
+    };
+  }
   render() {
     return (
       <Fragment>
@@ -18,7 +27,11 @@ class GameBoard extends Component {
           <Scores score={this.state.score} topscore={this.state.topscore} />
         </div>
         <div className="cardGrid">
-          <CardGrid />
+          <CardGrid
+            ickyData={ickies}
+            incrementCounter={this.incrementCounter}
+            resetCounter={this.resetCounter}
+          />
         </div>
       </Fragment>
     );
