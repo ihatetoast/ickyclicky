@@ -1,59 +1,68 @@
 import React, { Component } from "react";
+//using cloneDeep from lodash to copy array of ickies that doesn't end up just being a pointer:
 import { cloneDeep } from "lodash";
-//a fcn to use to copy arr/obj tha tdoesn't ref/pt to orig
 
-//components
 import IckyCard from "./IckyCard";
-
-//import my json
 import ickies from "../../ickies.json";
 //create obj called rendered ickies
-//creates am aarray upon const. it's in state so i can modify at will
+//creates a array upon const. it's in state so i can modify at will
 
 class CardList extends Component {
+  //constructor is the new getInitialState
   constructor(props) {
     super(props);
-    console.log(ickies);
     this.state = {
-      renderedIckies: []
+      renderedIckies: [],
+      picked: []
     };
     this.shuffle = this.shuffle.bind(this);
+    this.validatePick = this.validatePick.bind(this);
   }
   componentWillMount() {
     this.shuffle();
     console.log("mounting");
   }
-  //don't forget the constructor props and super to bind this.
-  state = {
-    picks: []
-  };
+
   // beenPicked(id) {
   //   return this.state.picks.includes(id);
   // }
 
-  validatePick = () => {
-    console.log(`Icky picked`);
-    this.shuffle();
-    //shuffle again. deal with this weds
+  validatePick = id => {
+    console.log("validate pick fired");
+    const alreadyPicked = this.state.picked;
+    //use filter or includes to find the id of the picked in the array.
+    if (!alreadyPicked.includes(id)) {
+      alreadyPicked.push(id);
+      this.shuffle();
+      console.log(
+        `${id} has not been picked. It should be pushed to alreadyPicked`
+      );
+      console.log(`alreadyPicked after push ${alreadyPicked}`);
+    } else {
+      //array has some picked ickies, so check.
+      console.log("That thar id is in dem woods");
+    }
+    console.log("id is " + id);
   };
+
   shuffle = () => {
     const ickiesClone = cloneDeep(ickies);
     let shuffledCards = [];
     //store arg
     let arr = ickiesClone || [];
+
     while (arr.length !== 0) {
       let randoIdx = Math.floor(Math.random() * arr.length);
-      //push the item at that rando idx to shuffled cards
       shuffledCards.push(arr[randoIdx]);
-      //and then splice that sucker out of the array
       arr.splice(randoIdx, 1);
     }
-    // return shuffledCards;
-    console.log();
+
     this.setState({
       renderedIckies: shuffledCards.map(icky => (
         <IckyCard
           validatePick={this.validatePick}
+          resetCounter={this.props.resetCounter}
+          // incrementCounter={this.props.incrementCounter}
           id={icky.id}
           key={icky.id}
           name={icky.name}
@@ -64,18 +73,9 @@ class CardList extends Component {
   };
   render() {
     console.log(this.state.renderedIckies);
+    //the above shows all of hte props from fn to id/key/etc
     return <div className="gameboard">{this.state.renderedIckies}</div>;
   }
 }
 
 export default CardList;
-
-/* 
- 
-      pass onclick mthd as a prop at this level
-
-      render ....
-      what i used in app. validate pick with this.validate and id passed in
-    in app, don't forget to pass down the id
-    onClick{()=>props.validatePick(id)}
-    */

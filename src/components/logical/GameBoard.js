@@ -4,22 +4,26 @@ import React, { Component, Fragment } from "react";
 import Scores from "./Scores";
 import CardGrid from "./CardGrid";
 
-//import my json
-import ickies from "../../ickies.json";
-
 class GameBoard extends Component {
   // increment counter, resent cohnter
   constructor(props) {
     super(props);
     // this.something=this.something.bind(this);
-    // this.incrementCounter = this.incrementCounter.bind(this);
-    // this.resetCounter = this.resetCounter.bind(this);
+    this.incrementCounter = this.incrementCounter.bind(this);
+    this.resetCounter = this.resetCounter.bind(this);
     this.state = {
-      picked: [], //not here
       score: 0,
       topscore: 0
     };
   }
+  incrementCounter = () => {
+    console.log("incrementCounter fired");
+    this.setState({ score: this.state.score + 1 });
+  };
+  resetCounter = () => {
+    console.log("ResetCounter fired");
+    this.setState({ topscore: 0 });
+  };
   render() {
     return (
       <Fragment>
@@ -28,7 +32,6 @@ class GameBoard extends Component {
         </div>
         <div className="cardGrid">
           <CardGrid
-            ickyData={ickies}
             incrementCounter={this.incrementCounter}
             resetCounter={this.resetCounter}
           />

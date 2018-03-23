@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 
-import Header from "./components/lean/Header";
-import Instructions from "./components/lean/Instructions";
+import Header from "./components/stateless/Header";
+import Instructions from "./components/stateless/Instructions";
 import GameBoard from "./components/logical/GameBoard";
+import Footer from "./components/stateless/Footer";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <Instructions />
         <GameBoard />
+        <Footer tagline="Toast is icky" />
       </Fragment>
     );
   }
