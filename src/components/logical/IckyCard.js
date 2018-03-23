@@ -6,8 +6,8 @@ const IckyCard = props => (
     className="card"
     onClick={e => {
       props.validatePick(props.id);
-      props.incrementCounter();
-      props.resetCounter();
+      // props.incrementCounter();
+      // props.resetCounter();
     }}
   >
     <div className="img-frame">
