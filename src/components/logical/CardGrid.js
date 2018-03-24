@@ -23,16 +23,13 @@ class CardList extends Component {
     console.log("mounting");
   }
 
-  // beenPicked(id) {
-  //   return this.state.picks.includes(id);
-  // }
-
   validatePick = id => {
     console.log("validate pick fired");
     const alreadyPicked = this.state.picked;
     //use filter or includes to find the id of the picked in the array.
     if (!alreadyPicked.includes(id)) {
       alreadyPicked.push(id);
+      // increaseScore();
       this.shuffle();
       console.log(
         `${id} has not been picked. It should be pushed to alreadyPicked`
@@ -40,6 +37,7 @@ class CardList extends Component {
       console.log(`alreadyPicked after push ${alreadyPicked}`);
     } else {
       //array has some picked ickies, so check.
+
       console.log("That thar id is in dem woods");
     }
     console.log("id is " + id);
@@ -50,19 +48,17 @@ class CardList extends Component {
     let shuffledCards = [];
     //store arg
     let arr = ickiesClone || [];
-
     while (arr.length !== 0) {
       let randoIdx = Math.floor(Math.random() * arr.length);
       shuffledCards.push(arr[randoIdx]);
       arr.splice(randoIdx, 1);
     }
-
     this.setState({
       renderedIckies: shuffledCards.map(icky => (
         <IckyCard
           validatePick={this.validatePick}
           resetCounter={this.props.resetCounter}
-          // incrementCounter={this.props.incrementCounter}
+          increaseScore={this.props.increaseScore}
           id={icky.id}
           key={icky.id}
           name={icky.name}
@@ -71,6 +67,7 @@ class CardList extends Component {
       ))
     });
   };
+
   render() {
     console.log(this.state.renderedIckies);
     //the above shows all of hte props from fn to id/key/etc

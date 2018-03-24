@@ -5,8 +5,8 @@ const IckyCard = props => (
   <div
     className="card"
     onClick={e => {
-      props.validatePick(props.id);
-      // props.incrementCounter();
+      // props.validatePick(props.id);
+      props.increaseScore();
       // props.resetCounter();
     }}
   >
