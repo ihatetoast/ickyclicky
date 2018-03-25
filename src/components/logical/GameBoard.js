@@ -12,13 +12,12 @@ import Message from "./Message";
 class GameBoard extends Component {
   constructor(props) {
     super(props);
-    // this.something=this.something.bind(this);
     this.increaseScore = this.increaseScore.bind(this);
-    this.resetCounter = this.resetCounter.bind(this);
+    this.resetGame = this.resetGame.bind(this);
     this.state = {
       score: 0,
       topscore: 0,
-      message: "Pick an ick, Mick"
+      message: ""
     };
     //testing colos here:
     // const randoPos = sample(messages[1]);
@@ -26,25 +25,32 @@ class GameBoard extends Component {
     // const randoNeg = sample(messages[2]);
     // console.log(randoNeg);
   }
-
-  //after validating that the card has not already been clicked, increase the score and all the joys: positive message
-  /**
+  encourage = () => {
+    console.log("encourage fired");
     const randoPos = sample(messages[1]);
-    
-   */
-  /*
-    const randoNeg = sample(messages[2]);
-    
-   */
+    this.setState = {
+      message: randoPos
+    };
+  };
   increaseScore = () => {
     console.log("increaseScore fired");
-    this.setState({
-      score: this.state.score + 1
+    this.setState((prevState, props) => {
+      return { score: prevState.score + 1 };
     });
   };
-  resetCounter = () => {
-    console.log("ResetCounter fired");
-    this.setState({ topscore: 0 });
+  resetGame = () => {
+    console.log("resetGame fired");
+    const currentScore = this.state.score;
+    if (this.state.score > this.state.topscore) {
+      this.setState({
+        topscore: currentScore,
+        score: 0
+      });
+    } else {
+      this.setState({
+        score: 0
+      });
+    }
   };
   render() {
     return (
@@ -57,7 +63,7 @@ class GameBoard extends Component {
           <CardGrid
             message={this.renderMessage}
             increaseScore={this.increaseScore}
-            resetCounter={this.resetCounter}
+            resetGame={this.resetGame}
           />
         </div>
       </Fragment>

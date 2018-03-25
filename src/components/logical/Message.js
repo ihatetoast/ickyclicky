@@ -5,5 +5,8 @@ class Message extends Component {
     return <div className="messageDiv">{this.props.message}</div>;
   }
 }
+Message.defaultProps = {
+  name: "Pick an ick, Mick"
+};
 
 export default Message;

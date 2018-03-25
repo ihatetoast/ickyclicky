@@ -29,18 +29,15 @@ class CardList extends Component {
     //use filter or includes to find the id of the picked in the array.
     if (!alreadyPicked.includes(id)) {
       alreadyPicked.push(id);
-      // increaseScore();
+      this.props.increaseScore();
       this.shuffle();
-      console.log(
-        `${id} has not been picked. It should be pushed to alreadyPicked`
-      );
-      console.log(`alreadyPicked after push ${alreadyPicked}`);
     } else {
-      //array has some picked ickies, so check.
-
-      console.log("That thar id is in dem woods");
+      this.props.resetGame();
+      this.setState({
+        picked: []
+      });
+      this.shuffle();
     }
-    console.log("id is " + id);
   };
 
   shuffle = () => {
@@ -57,8 +54,6 @@ class CardList extends Component {
       renderedIckies: shuffledCards.map(icky => (
         <IckyCard
           validatePick={this.validatePick}
-          resetCounter={this.props.resetCounter}
-          increaseScore={this.props.increaseScore}
           id={icky.id}
           key={icky.id}
           name={icky.name}

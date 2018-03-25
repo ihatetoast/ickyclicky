@@ -5,9 +5,7 @@ const IckyCard = props => (
   <div
     className="card"
     onClick={e => {
-      // props.validatePick(props.id);
-      props.increaseScore();
-      // props.resetCounter();
+      props.validatePick(props.id);
     }}
   >
     <div className="img-frame">
