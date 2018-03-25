@@ -38,5 +38,25 @@
     "id": 8,
     "name": "toast",
     "image": "/images/toast.svg"
+  },
+  {
+    "id": 9,
+    "name": "crack",
+    "image": "/images/crack.svg"
+  },
+  {
+    "id": 10,
+    "name": "earwax",
+    "image": "/images/earwax.svg"
+  },
+  {
+    "id": 11,
+    "name": "toenails",
+    "image": "/images/toenails.svg"
+  },
+  {
+    "id": 12,
+    "name": "pox",
+    "image": "/images/pox.svg"
   }
 ]

@@ -6,6 +6,4 @@ const Footer = props => (
   </footer>
 );
 
-//stateless and implicit return
 export default Footer;
-//if time allows style the span to make the icky ... icky

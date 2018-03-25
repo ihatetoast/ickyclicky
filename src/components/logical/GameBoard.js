@@ -17,38 +17,30 @@ class GameBoard extends Component {
     this.state = {
       score: 0,
       topscore: 0,
-      message: ""
+      message: "Pick an icky, Micky."
     };
-    //testing colos here:
-    // const randoPos = sample(messages[1]);
-    // console.log(randoPos);
-    // const randoNeg = sample(messages[2]);
-    // console.log(randoNeg);
   }
-  encourage = () => {
-    console.log("encourage fired");
-    const randoPos = sample(messages[1]);
-    this.setState = {
-      message: randoPos
-    };
-  };
   increaseScore = () => {
-    console.log("increaseScore fired");
+    const randoMessage = sample(messages);
     this.setState((prevState, props) => {
-      return { score: prevState.score + 1 };
+      return {
+        score: prevState.score + 1,
+        message: randoMessage
+      };
     });
   };
   resetGame = () => {
-    console.log("resetGame fired");
     const currentScore = this.state.score;
     if (this.state.score > this.state.topscore) {
       this.setState({
         topscore: currentScore,
-        score: 0
+        score: 0,
+        message: "Bugger. But that's a new top score!"
       });
     } else {
       this.setState({
-        score: 0
+        score: 0,
+        message: "You blew it, Hewitt."
       });
     }
   };
