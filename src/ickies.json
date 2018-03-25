@@ -2,37 +2,41 @@
   {
     "id": 1,
     "name": "ebola",
-    "image": "/images/ebola.svg",
-    "clicked": false
+    "image": "/images/ebola.svg"
   },
   {
     "id": 2,
     "name": "boogers",
-    "image": "/images/boogers.svg",
-    "clicked": false
+    "image": "/images/boogers.svg"
   },
   {
     "id": 3,
     "name": "clap",
-    "image": "/images/gonorrhea.svg",
-    "clicked": false
+    "image": "/images/gonorrhea.svg"
   },
   {
     "id": 4,
     "name": "roaches",
-    "image": "/images/roaches.svg",
-    "clicked": false
+    "image": "/images/roaches.svg"
   },
   {
     "id": 5,
     "name": "spider",
-    "image": "/images/spider.svg",
-    "clicked": false
+    "image": "/images/spider.svg"
   },
   {
     "id": 6,
     "name": "turd",
-    "image": "/images/turd.svg",
-    "clicked": false
+    "image": "/images/turd.svg"
+  },
+  {
+    "id": 7,
+    "name": "slugs",
+    "image": "/images/slugs.svg"
+  },
+  {
+    "id": 8,
+    "name": "toast",
+    "image": "/images/toast.svg"
   }
 ]
