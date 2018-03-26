@@ -45,7 +45,7 @@ class CardList extends Component {
     }
     this.setState({
       renderedIckies: shuffledCards
-        // .splice(0, 4)
+        .splice(0, 4)
         .map(icky => (
           <IckyCard
             validatePick={this.validatePick}
