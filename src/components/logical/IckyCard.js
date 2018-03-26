@@ -9,7 +9,7 @@ const IckyCard = props => (
     }}
   >
     <div className="img-frame">
-      <img alt={props.name} src={props.image} />
+      <img alt={props.name} src={`./images/${props.image}`} />
     </div>
   </div>
 );

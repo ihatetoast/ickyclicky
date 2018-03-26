@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "ebola",
-    "image": "/images/ebola.svg"
+    "image": "ebola.svg"
   },
   {
     "id": 2,
     "name": "boogers",
-    "image": "/images/boogers.svg"
+    "image": "boogers.svg"
   },
   {
     "id": 3,
     "name": "clap",
-    "image": "/images/gonorrhea.svg"
+    "image": "gonorrhea.svg"
   },
   {
     "id": 4,
     "name": "roaches",
-    "image": "/images/roaches.svg"
+    "image": "roaches.svg"
   },
   {
     "id": 5,
     "name": "spider",
-    "image": "/images/spider.svg"
+    "image": "spider.svg"
   },
   {
     "id": 6,
     "name": "turd",
-    "image": "/images/turd.svg"
+    "image": "turd.svg"
   },
   {
     "id": 7,
     "name": "slugs",
-    "image": "/images/slugs.svg"
+    "image": "slugs.svg"
   },
   {
     "id": 8,
     "name": "toast",
-    "image": "/images/toast.svg"
+    "image": "toast.svg"
   },
   {
     "id": 9,
     "name": "crack",
-    "image": "/images/crack.svg"
+    "image": "crack.svg"
   },
   {
     "id": 10,
     "name": "earwax",
-    "image": "/images/earwax.svg"
+    "image": "earwax.svg"
   },
   {
     "id": 11,
     "name": "toenails",
-    "image": "/images/toenails.svg"
+    "image": "toenails.svg"
   },
   {
     "id": 12,
     "name": "pox",
-    "image": "/images/pox.svg"
+    "image": "pox.svg"
   }
 ]
