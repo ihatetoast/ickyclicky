@@ -1,8 +1,10 @@
 import React from "react";
 
 const Footer = props => (
-  <footer>
-    <p>Katy Cassidy | ihatetoast | {props.tagline}</p>
+  <footer className="footer">
+    <p>
+      Katy Cassidy | ihatetoast | <span>{props.tagline}</span>
+    </p>
   </footer>
 );
 

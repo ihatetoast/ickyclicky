@@ -1,17 +1,17 @@
 import React from "react";
 //static with "staty" until katy is ready for staty
 const Scores = props => (
-  <div className="scores">
-    <ul className="scoreList">
-      <li>
-        <span className="scoreTitle">Current score: </span>
-        <span>{props.score}</span>
-      </li>
-      <li>
-        <span className="scoreTitle">Top score: </span>
-        <span>{props.topscore}</span>
-      </li>
-    </ul>
+  <div className="scoresDiv">
+    <div>
+      <p>
+        Current score: <span className="scores">{props.score}</span>
+      </p>
+    </div>
+    <div>
+      <p>
+        Top score: <span className="scores">{props.topscore}</span>
+      </p>
+    </div>
   </div>
 );
 

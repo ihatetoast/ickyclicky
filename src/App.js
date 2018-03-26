@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       tagline: [
         "is icky",
-        "is sad",
+        "is angry bread",
         "crumbs ruins butter",
         "smells",
         "is the Putin of breakfast"
@@ -23,8 +23,10 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Instructions />
-        <GameBoard />
+        <div className="game">
+          <Instructions />
+          <GameBoard />
+        </div>
         <Footer tagline={`Toast ${sample(this.state.tagline)}`} />
       </Fragment>
     );

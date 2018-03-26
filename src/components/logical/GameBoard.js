@@ -17,7 +17,7 @@ class GameBoard extends Component {
     this.state = {
       score: 0,
       topscore: 0,
-      message: "Pick an icky, Micky."
+      message: "Pick an icky, Mickey."
     };
   }
   increaseScore = () => {
@@ -51,7 +51,7 @@ class GameBoard extends Component {
           <Message message={this.state.message} />
           <Scores score={this.state.score} topscore={this.state.topscore} />
         </div>
-        <div className="cardGrid">
+        <div className="gameBoard">
           <CardGrid
             message={this.renderMessage}
             increaseScore={this.increaseScore}

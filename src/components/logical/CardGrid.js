@@ -59,7 +59,7 @@ class CardList extends Component {
   };
 
   render() {
-    return <div className="gameboard">{this.state.renderedIckies}</div>;
+    return <div className="cardGrid">{this.state.renderedIckies}</div>;
   }
 }
 
