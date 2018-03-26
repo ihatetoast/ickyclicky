@@ -6,7 +6,7 @@ The player sees a grid made up of images of icky things and clicks on an image. 
 
 ### Note:
 
-There are currently 12 images; however, I made the grid 2x2 so that it would be harder to remember what the play's choices are and what she's already chosen. By keeping the playing grid 2x2, I can add images as I choose and not worry about having to do enough to keep a neat grid.
+There are currently 12 images; however, I made the grid 2x2 so that it would be harder to remember what the player's choices are and what she's already chosen. By keeping the playing grid 2x2, I can add images as I choose and not worry about having to do enough to keep a neat grid.
 
 ## Toolbox:
 
