@@ -33,7 +33,12 @@ class CardList extends Component {
       this.shuffle();
     }
   };
-
+  //const ickiesClone = { ...ickies };
+  /**
+   * v2 feat/levelbutton branch:
+   * i want the level of difficulty to determine the grid: 2x2, 3x3, 4x4
+   * this will affect the grid and the style.
+   */
   shuffle = () => {
     const ickiesClone = cloneDeep(ickies);
     let shuffledCards = [];

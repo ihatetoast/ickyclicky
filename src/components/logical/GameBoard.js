@@ -17,6 +17,7 @@ class GameBoard extends Component {
     this.state = {
       score: 0,
       topscore: 0,
+      level: "",
       message: "Pick an icky, Mickey."
     };
   }
@@ -29,6 +30,10 @@ class GameBoard extends Component {
       };
     });
   };
+  chooseLevel = () => {
+    console.log("chooseLevel fired.");
+  };
+
   resetGame = () => {
     const currentScore = this.state.score;
     if (this.state.score > this.state.topscore) {
@@ -56,6 +61,7 @@ class GameBoard extends Component {
             message={this.renderMessage}
             increaseScore={this.increaseScore}
             resetGame={this.resetGame}
+            level={this.state.level}
           />
         </div>
       </Fragment>

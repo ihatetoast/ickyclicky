@@ -1,7 +1,7 @@
 const messages = [
   "Whoop-de-doo, Andrew!",
   "Clickin' with flare, Clare.",
-  "Keep it up, pup",
+  "Keep it up, pup.",
   "You're awesome, possum.",
   "Clickin' like a beast!",
   "Memory of an elephant.",

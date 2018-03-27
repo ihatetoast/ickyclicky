@@ -132,6 +132,8 @@ p {
   border: 0.2em solid $darkestGreen;
   border-radius: 0.2em;
 }
+/* version 2 with different grids:
+*/
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
