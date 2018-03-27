@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #EBEBEB;">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ie</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="56.0259725%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.830814085" offset="0%"></stop>
+            <stop stop-color="#0C71BD" offset="100%"></stop>
+        </radialGradient>
+        <path d="M100,174 C59.1309285,174 26,140.869071 26,100 C26,59.1309285 59.1309285,26 100,26 C140.869071,26 174,59.1309285 174,100 C174,140.869071 140.869071,174 100,174 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F4E3BF" offset="0%"></stop>
+            <stop stop-color="#FAB714" offset="26.3180982%"></stop>
+            <stop stop-color="#FBB20B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ie" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape">
+            <use fill="#0476D3" xlink:href="#path-2"></use>
+            <use fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+        </g>
+        <path d="M60,112.880687 C64.8841673,136.037521 77.4898512,148 99.6829445,148 C115.059292,148 126.153601,141.751979 133.273218,130.562397 C133.533692,130.153021 163.371608,130.562397 167.892594,130.562397 C170.65095,127.890049 172.8453,125.779718 172.8453,112.880687 C170.111971,112.880687 159.305339,112.880687 140.425404,112.880687 L60,112.880687 Z M138.425404,88.2274911 C133.506604,64.4209565 119.274428,54 99.6829445,54 C80.4998968,54 65.2852681,65.3633999 60,88.2274911 L138.425404,88.2274911 Z" id="Oval-10" fill="#EBEBEB"></path>
+        <path d="M14.5624387,108.054261 C2.27489099,100.72132 -4.3783661,92.0936488 -4.3783661,84.1134309 C-4.3783661,65.0596071 37.4216171,49.6134309 88.9845095,49.6134309 C140.547402,49.6134309 182.347385,65.0596071 182.347385,84.1134309 C182.347385,93.5414804 176.270293,103.873227 162.620359,111.906004 C176.516132,102.207721 178.092311,90.4213794 177.951603,84.913387 C177.690502,74.6925854 130.064866,65.5395291 91.7297714,65.5395291 C53.394677,65.5395291 2.85624973,73.6897329 3.04597793,85.9601077 C3.13009614,91.4003218 5.28146403,100.078586 14.562442,108.054264 Z" id="Combined-Shape" fill="url(#linearGradient-3)" transform="translate(88.984510, 80.759720) rotate(-27.000000) translate(-88.984510, -80.759720) "></path>
+    </g>
+</svg>
