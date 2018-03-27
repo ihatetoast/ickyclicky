@@ -11,11 +11,12 @@ class App extends Component {
     super();
     this.state = {
       tagline: [
-        "is icky",
-        "is angry bread",
-        "crumbs ruins butter",
-        "smells",
-        "is the Putin of breakfast"
+        "is icky.",
+        "is angry bread.",
+        "crumbs ruin butter.",
+        "smells.",
+        "is the Putin of breakfasts.",
+        " ... it burns. It burrrrns!"
       ]
     };
   }

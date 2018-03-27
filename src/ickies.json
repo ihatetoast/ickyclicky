@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "ebola",
+    "name": "ebola bacteria",
     "image": "./images/ebola.svg"
   },
   {
@@ -11,27 +11,27 @@
   },
   {
     "id": 3,
-    "name": "clap",
+    "name": "gonorrhea bacteria",
     "image": "./images/gonorrhea.svg"
   },
   {
     "id": 4,
-    "name": "roaches",
+    "name": "roaches on a cupcake",
     "image": "./images/roaches.svg"
   },
   {
     "id": 5,
-    "name": "spider",
+    "name": "spider on the uvula",
     "image": "./images/spider.svg"
   },
   {
     "id": 6,
-    "name": "turd",
+    "name": "bare foot stepping on a turd",
     "image": "./images/turd.svg"
   },
   {
     "id": 7,
-    "name": "slugs",
+    "name": "slugs on cherries",
     "image": "./images/slugs.svg"
   },
   {
@@ -41,22 +41,27 @@
   },
   {
     "id": 9,
-    "name": "crack",
+    "name": "butt crack",
     "image": "./images/crack.svg"
   },
   {
     "id": 10,
-    "name": "earwax",
+    "name": "earwax on an cotton bud",
     "image": "./images/earwax.svg"
   },
   {
     "id": 11,
-    "name": "toenails",
+    "name": "toenail clippings",
     "image": "./images/toenails.svg"
   },
   {
     "id": 12,
-    "name": "pox",
+    "name": "a woman with the pox",
     "image": "./images/pox.svg"
+  },
+  {
+    "id": 13,
+    "name": "internet explorer logo",
+    "image": "./images/ie.svg"
   }
 ]
